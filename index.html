@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cryptor by StrongeLeeroy</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+				<div class="col-xs-12">
+						<h1>Cryptor</h1>
+				</div>
+		</div>
+		<fieldset>
+			<legend></legend>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-8">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<div class="form-group">
+								<label class="control-label" for="message">Message:</label>
+								<textarea id="message" class="form-control" rows="5" placeholder="Enter your message..."></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<div class="form-group">
+								<label class="control-label" for="result">Result:</label>
+								<textarea id="result" class="form-control" rows="5" readonly></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<select id="encryptionType" class="form-control" onchange="optionPanel()">
+							  <option value="1">Caesar Cipher</option>
+							  <option value="2">Polyalphabetic Cipher</option>
+							</select>
+						</div>
+						<div class="clearfix visible-xs-block spacing"></div>
+						<div class="col-xs-12 col-sm-3 col-sm-offset-0">
+							<button type="button" class="btn btn-danger btn-block" onClick="getMethod(0)">Encrypt</button>
+						</div>
+						<div class="clearfix visible-xs-block spacing"></div>
+						<div class="col-xs-12 col-sm-3 col-sm-offset-0">
+							<button type="button" class="btn btn-success btn-block" onClick="getMethod(1)">Decrypt</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<fieldset>
+						<legend>Options</legend>
+						<div id="encryptionOptions">
+							<label for="shiftAmount" class="">Shift Amount:</label>
+							<input id="shiftAmount" class="form-control" type="text" placeholder="Example: 1">
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</fieldset>
+	</div>
+	<!-- JAVASCRIPT -->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/cryptor.js"></script>
+</body>
+</html>

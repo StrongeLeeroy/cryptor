@@ -1,0 +1,29 @@
+body
+{
+	padding: 20px;
+}
+
+form
+{
+	padding: 20px;
+}
+
+textarea
+{
+	resize: none;
+}
+
+div#standard
+{
+	font-family: monospace; font-size: 10px;
+}
+
+footer
+{
+	float: right; text-align: right; font-size: 10px;
+}
+
+.spacing
+{
+	padding: 5px;
+}
